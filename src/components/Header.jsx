@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container">
-          <NavLink className={isActiveLink} to={'/'}>Todo App</NavLink>
+          <NavLink className="navbar-brand" to={'/'}>Todo App</NavLink>
 
           <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +21,9 @@ const Header = () => {
                 <NavLink className={isActiveLink} aria-current="page" to={'/'}>
                   Home <span className="visually-hidden">(current)</span>
                 </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={isActiveLink} to={'/todo'}>Todo</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className={isActiveLink} to={'/about'}>About</NavLink>
