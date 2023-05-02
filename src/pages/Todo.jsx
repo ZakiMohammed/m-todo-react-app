@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import PageTitle from '../components/PageTitle'
-import { getAll } from '../services/todos'
+import { getAll } from '../services/Todos'
 
 const Todo = () => {
   const [list, setList] = useState([])
@@ -21,7 +21,7 @@ const Todo = () => {
 
   return (
     <>
-      <PageTitle title={'Todo List'} />
+      <PageTitle title={'Todo List'} link={'/'} />
 
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, consequatur.</p>
 
